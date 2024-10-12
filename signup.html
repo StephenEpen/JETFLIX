@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jetflix</title>
+    <link rel="icon" href="img/JTFlogo.png">
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- feather icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar">
+        <a href="#" class="navbar-logo">JETFLIX</a>
+        <div class="navbar-nav">
+            <a href="index.html">Beranda</a>
+            <a href="populer.html">Populer</a>
+            <a href="movie.html">Movie</a>
+            <a href="detail.html">Detail</a>
+        </div>
+        <div class="navbar-menu">
+            <a href="#" id="menu"><i data-feather="menu"></i></a>
+        </div>
+    </nav>
+    <section class="signup" id="signup">
+        <div class="contain">
+            <form id="form" action="/">
+                <h1>Registrasi</h1>
+                <div class="input-control">
+                    <label for="username">Nama</label>
+                    <input id="username" name="username" type="text">
+                    <div class="error"></div>
+                </div>
+                <div class="input-control">
+                    <label for="password">Password</label>
+                    <input id="password" name="password" type="password">
+                    <div class="error"></div>
+                </div>
+                <div class="input-control">
+                    <label for="cpassword">Konfirmasi Password</label>
+                    <input id="cpassword" name="cpassword" type="password">
+                    <div class="error"></div>
+                </div>
+                <div class="input-control">
+                    <label for="date">Tanggal Lahir</label>
+                    <input id="date" name="date" type="date">
+                    <div class="error"></div>
+                </div>
+                <div class="input-control">
+                    <label for="gender">Jenis Kelamin</label>
+                    <input id="gender" name="gender" type="text">
+                    <div class="error"></div>
+                </div>
+                <div class="checkedtnc">   
+                    <input id="tnc" name="tnc" type="checkbox" class="chk   ">
+                    <div class="babi">
+                        <p class="tnctext">Saya menerima semua syarat dan ketentuan yang berlaku</p>
+                        <div class="error"></div>
+                    </div>
+                </div>
+
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+    </section>
+
+    <script>
+        feather.replace()
+    </script>
+
+    <script defer src="script.js"></script>
+    
+</body>
+</html>
